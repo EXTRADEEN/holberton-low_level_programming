@@ -1,10 +1,10 @@
-#include<studio.h>
+#include<stdio.h>
 
 /**
-*main - c code
-*Description: display the message to the screen
-*Return: 0 if all is good
-*/
+ * main - c code
+ * Description: display the message to the screen
+ * Return: 0 if all is good
+ */
 
 int main(void)
 {
