@@ -1,2 +1,3 @@
-This program will assign a random nuber to the variable "n" eatc time it is executed. Complete the source code in order to print whether the number stored in variable "n" is positive or negative.
-This program will assign a random number to the variable "n" eech time it is executed. Complete the source code in order to print the last digit of the nuber stored in the variable "n".
+0-positive_or_negative - This program will assign a random nuber to the variable "n" eatc time it is executed. Complete the source code in order to print whether the number stored in variable "n" is positive or negative.
+1-last_digit - This program will assign a random number to the variable "n" eech time it is executed. Complete the source code in order to print the last digit of the nuber stored in the variable "n".
+2-print_alphabet.c - Write a program that prints the alphabel in lowercase, followed by a new line.
