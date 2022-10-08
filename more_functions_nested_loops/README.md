@@ -6,3 +6,4 @@
 5-more_numbers - Is a function that prints 10 times the numbers, from 0 to 14, followed by a new line.
 6-print_line - Is a function that draws a straight line in the ter minal.
 7-print_diagonal - Is a function that draws a diagonal line on the terminal.
+8-print_square - Is a function that prints a square, followed by anew line
