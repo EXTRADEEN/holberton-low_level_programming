@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _puts - a function that prints a string,
- * followed by a new line, to stout.
- * @str: an input string
+ * print_rev - a function that prints a string,
+ * in reverse, followed by a new line.
+ * @s: an input string
  * Return: string
  */
 void print_rev(char *s)
