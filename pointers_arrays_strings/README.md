@@ -2,3 +2,5 @@
 1-swap - Is a function that swaps the  values of two integers.
 2-strlen - Is a function that returns the lenght of a string.
 3-puts - is a function that prints a string, followed by a new line, to stdout.
+4-print_rev - Is a function that prints a string, in reverse, followed by a new line.
+5-rev_string - Is a function that reverse a string.
