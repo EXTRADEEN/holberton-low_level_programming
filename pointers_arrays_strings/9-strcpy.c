@@ -4,16 +4,14 @@
  * *_strcpy - a function thet copies the string pointet to by src,
  * including the terminating byte (\0), to the buffer pointed to by dest.
  * @src: copy from
- * @src: copy to
+ * @dest: copy to
  * Return: string
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	char *dust = dest;
 
-	for (i = 0; src[i] != '\0'; i++)
-	{
-		dest[i] = src[i];
-	}
-	return (dest);
+	while (*src)
+		*dest++ = *src++;
+	return (dust);
 }
