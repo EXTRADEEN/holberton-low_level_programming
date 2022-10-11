@@ -4,3 +4,4 @@
 3-puts - is a function that prints a string, followed by a new line, to stdout.
 4-print_rev - Is a function that prints a string, in reverse, followed by a new line.
 5-rev_string - Is a function that reverse a string.
+6-puts2 - Is a function that prints every other character of a string, starting with the firs character, followed by a new line.
