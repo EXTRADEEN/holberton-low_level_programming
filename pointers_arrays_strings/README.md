@@ -8,3 +8,4 @@
 7-puts_half - Is a function that prints half of string, followed by a new line.
 8-print_array - Is a function that print "n" elements of on array of integers, followed by a new line.
 9-strcpy - is a function that copies the string pointed to by "src", including the terminating nul byte (\0), to the buffer pointed to by "dest.
+0-strcat - Is a function that concatenates two strings.
