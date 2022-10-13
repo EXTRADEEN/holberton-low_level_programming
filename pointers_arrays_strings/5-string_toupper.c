@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strig_trouper - s function that changes all lowercase letters
+ * strig_troupper - s function that changes all lowercase letters
  * of a string to uppercase
  * @s: an input string
  * Return: capitialized string
