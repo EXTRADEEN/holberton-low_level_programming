@@ -8,7 +8,7 @@
 char *cap_string(char *n)
 {
 	int i, s;
-	int cap = 31;
+	int cap = 32;
 	int sep[] = {',', ';', '.', '?', '"',
 		     '(', ')', '{', '}', ' ', '\n', '\t'};
 
@@ -16,7 +16,7 @@ char *cap_string(char *n)
 	{
 		if (n[i] >= 'a' && n[i] <= 'z')
 		{
-			n[i] = n[i] -cap;
+			n[i] = n[i] - cap;
 		}
 
 		cap = 0;
