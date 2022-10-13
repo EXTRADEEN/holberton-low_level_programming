@@ -12,3 +12,4 @@
 1-strncat - Is a function that cancatenates tho strings
 2-strncpy - Is a function that copies a string.
 3-strcmp - Is a function that compares two strings.
+4-rev_array - Is a function that reverse the content of an array of integers.
