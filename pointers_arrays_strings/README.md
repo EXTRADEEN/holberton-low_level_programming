@@ -10,3 +10,4 @@
 9-strcpy - is a function that copies the string pointed to by "src", including the terminating nul byte (\0), to the buffer pointed to by "dest.
 0-strcat - Is a function that concatenates two strings.
 1-strncat - Is a function that cancatenates tho strings
+2-strncpy - Is a function that copies a string.
