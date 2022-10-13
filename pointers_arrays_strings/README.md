@@ -11,3 +11,4 @@
 0-strcat - Is a function that concatenates two strings.
 1-strncat - Is a function that cancatenates tho strings
 2-strncpy - Is a function that copies a string.
+3-strcmp - Is a function that compares two strings.
