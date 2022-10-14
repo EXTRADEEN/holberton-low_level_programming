@@ -22,3 +22,4 @@
 3-strspn - Is a function that gets the lenth of a prefix substring.
 4-strpbrk - Is a function that searches a string for any of set of bytes.
 5-strstr - Is a function that locates a substring
+7-print_cheesboard - Is a function that prints the chessboard.
