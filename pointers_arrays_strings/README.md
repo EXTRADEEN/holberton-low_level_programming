@@ -23,3 +23,4 @@
 4-strpbrk - Is a function that searches a string for any of set of bytes.
 5-strstr - Is a function that locates a substring
 7-print_cheesboard - Is a function that prints the chessboard.
+8-print_diagsums - Is a function that prints the sum of two diagonals of square matrix of integers.
