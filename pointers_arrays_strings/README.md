@@ -19,3 +19,4 @@
 0-memset - Is a function that fills memory with a constat byte.
 1-memcpy - Is a function that copies memory area.
 2-strchr - Is a function that locates a character in a string.
+3-strspn - Is a function that gets the lenth of a prefix substring.
