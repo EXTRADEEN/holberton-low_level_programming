@@ -18,3 +18,4 @@
 7-leet - Is a function that encodes a string into 1337.
 0-memset - Is a function that fills memory with a constat byte.
 1-memcpy - Is a function that copies memory area.
+2-strchr - Is a function that locates a character in a string.
