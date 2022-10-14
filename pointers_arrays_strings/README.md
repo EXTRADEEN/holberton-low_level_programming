@@ -21,3 +21,4 @@
 2-strchr - Is a function that locates a character in a string.
 3-strspn - Is a function that gets the lenth of a prefix substring.
 4-strpbrk - Is a function that searches a string for any of set of bytes.
+5-strstr - Is a function that locates a substring
