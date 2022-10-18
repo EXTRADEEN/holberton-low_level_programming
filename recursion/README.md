@@ -4,3 +4,4 @@
 3-factorial - Is a function that returns the factorial of a given number.
 4-pow_recursion - Is a function that returns the value of x raised to the power of y.
 5-sqrt_recursion - Is a function that returns natural square root of a number.
+6-is_prime_number - Is a function that return1 if the input integer is a prime number, otherwise return 0.
