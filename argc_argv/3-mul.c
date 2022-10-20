@@ -16,8 +16,10 @@ int main(int argc, char *argv[])
 	int mul;
 
 	if (argc != 3)
+	{
 		printf("Error\n");
-	return (1);
+		return (1);
+	}
 
 	i = atoi(argv[1]);
 	n = atoi(argv[2]);
