@@ -1,7 +1,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
-int change(int cents);
+
 /**
  * main - a program that prints all arguments it receives
  * @argc: an argument counter
@@ -11,56 +11,44 @@ int change(int cents);
 
 int main(int argc, char *argv[])
 {
-	if (argc != 2)
+	int amount, coins =0;
+
+	if (argc == 2)
 	{
-		printf("%s\n", "Error");
-		return (1);
-	}
-	else if (argc < 0)
-	{
+		amount = atoi(argv[1]);
+		if (amount < 0)
+		{
+			printf("%d\n", 0);
+			return (0);
+		}
+		if (amount % 25 >= 0)
+		{
+			coins += amount / 25;
+			amount = amount % 25;
+		}
+		if (amount % 10 >= 0)
+		{
+			coins += amount / 10;
+			amount = amount % 10;
+		}
+		if (amount % 5 >= 0)
+		{
+			coins += amount / 5;
+			amount = amount % 5;
+		}
+		if (amount % 2 >= 0)
+		{
+			coins += amount / 2;
+			amount = amount % 2;
+		}
+		if (amount % 1 >= 0)
+			coins += amount;
+		printf("%d\n", coins);
 		return (0);
 	}
-	printf("%d\n", change(atoi(argv[1])));
-	return (0);
-}
-
-/**
- * change - get change
- * @cents: amount of coins
- * Return: change
- */
-int change(int cents)
-{
-	int q = 25, d = 10, f = 5, t = 2, o = 1;
-	int coins;
-
-	while (cents >= 0)
+	else
 	{
-		while (cents >= q)
-		{
-			cents -= q;
-			coins++;
-		}
-		while (cents >= d)
-		{
-			cents -= d;
-			coins++;
-		}
-		while (cents >= f)
-		{
-			cents -= f;
-			coins++;
-		}
-		while (cents >= t)
-		{
-			cents -= t;
-			coins++;
-		}
-		while (cents >= o)
-		{
-			cents -= o;
-			coins++;
-		}
+		printf("Error\n");
+		return (1);
 	}
-	return (coins);
 }
