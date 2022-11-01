@@ -1,51 +1,67 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
+
 /**
- * new_dog - creates a new dog structure
- * @name: name
- * @age: age
- * @owner: owner
- * Return: a pointer to newly created structure
+ * _strdup - main
+ * @str: ptr
+ * Return: res
  */
+
+char	*_strdup(char *str)
+{
+	char	*res;
+	int	x;
+
+	if (str == 0)
+		return (0);
+	for (x = 0; str[x]; x++)
+		;
+	res = (char *) malloc(sizeof(char) * (x + 1));
+	if (res == 0)
+		return (0);
+	for (x = 0; str[x]; x++)
+		res[x] = str[x];
+	res[x] = '\0';
+	return (res);
+}
+
+/**
+ * new_dog - dog caracteristics
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: dog's owner
+ * Return: p
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog;
-	char *copy_name, *copy_owner;
-	unsigned int x, name_len = 0, owner_len = 0;
+	dog_t *ndog;
+	char *nname;
+	char *nowner;
 
-	new_dog = malloc(sizeof(dog_t));
-	if (name == NULL)
-		return (NULL);
-	if (name == NULL || age <= 0 || owner == NULL)
+	if (name == 0 || owner == 0)
+		return (0);
+
+	nname = _strdup(name);
+	if (nname == 0)
+		return (0);
+	nowner = _strdup(owner);
+	if (nowner == 0)
 	{
-		return (NULL);
-		free(new_dog);
+		free(nname);
+		return (0);
 	}
-
-	for (x = 0; name[x] != '\0'; x++)
-		name_len++;
-
-	for (x = 0; owner[x] != '\0'; x++)
-		owner_len++;
-
-	copy_name = malloc(sizeof(char) * (name_len + 1));
-	if (copy_name == NULL)
-		return (NULL);
-
-	copy_owner = malloc(sizeof(char) * (owner_len + 1));
-	if (copy_owner == NULL)
-		return (NULL);
-
-	for (x = 0; x <= name_len; x++)
-		copy_name[x] = name[x];
-
-	for (x = 0; x <= owner_len; x++)
-		copy_owner[x] = owner[x];
-
-	new_dog->name = copy_name;
-	new_dog->owner = copy_owner;
-	new_dog->age = age;
-	return (new_dog);
+	ndog = malloc(sizeof(dog_t));
+	if (ndog == NULL)
+	{
+		free(nname);
+		free(nowner);
+		return (0);
+	}
+	ndog->name = nname;
+	ndog->age = age;
+	ndog->owner = nowner;
+	return (ndog);
 }
