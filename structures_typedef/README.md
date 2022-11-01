@@ -3,3 +3,4 @@
 2-print_dog - Is a function that prints a "struct dog"
 3-dog - Define a new dog_t as new name for the type "struct dog"
 4-new_dog - Is a function that creates a new dog
+5-free_dog - Is a function that frees dogs.
