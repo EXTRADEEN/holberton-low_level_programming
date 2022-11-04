@@ -7,7 +7,7 @@
  * @separator: separator
  */
 
-void print_string(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	char *c;
@@ -15,8 +15,6 @@ void print_string(const char *separator, const unsigned int n, ...)
 	va_list ap;
 
 	va_start(ap, n);
-
-	i = 0;
 
 	for (i = 0; i < n; i++)
 	{
