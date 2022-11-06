@@ -4,19 +4,16 @@
 #include <stdarg.h>
 
 /**
- * @c: character
- * @i: integer
- * @f: float
- * @s: string
- * Desctiption: Longer description
+ * struct print - definition of structure
+ *
+ * @c: char
+ * @f: function
  */
-typedef struct form
+typedef struct print
 {
-      char c;
-      int i;
-      float f;
-      char *s;
-}form;
+	char *c;
+	void (*f)(va_list args);
+}print_t;
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
