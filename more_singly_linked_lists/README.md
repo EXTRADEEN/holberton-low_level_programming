@@ -4,3 +4,4 @@
 4-free_listint - A function that frees a listint_t list
 5-free_listint2 - A function that frees a listint_t list
 6-pop_listint - A function that deletes the head node of a listint_t linked list, and returns the head node"s data (n)
+7-get_nodeint - A function that return the nth node of a listint_t linked list
