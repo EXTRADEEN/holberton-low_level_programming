@@ -10,7 +10,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	ssize_t fd, r;
+	int fd, r;
 
 	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC | 0600);
 	if (fd == -1)
@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 	for (r = 0; text_content[r] != '\0'; r++)
 	{
 	}
-	write (fd, text_content, r);
+	write(fd, text_content, r);
 	}
 
 	close(fd);
