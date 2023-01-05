@@ -24,5 +24,3 @@ int **allocate_map(int n, int m)
      }
      return (map);
 }
-```
-```{bash}
