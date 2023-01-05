@@ -2,9 +2,9 @@
 
 /**
  * linear_search - function that search for a value in an array of integers
- * @array - pointer to the firs element of the array to search in
- * @size - number of elements in array
- * @value - the value to search for
+ * @array: pointer to the firs element of the array to search in
+ * @size: number of elements in array
+ * @value: the value to search for
  * Return: function must return the first index where value is located
  * if value is not present in array or if array is NULL,
  * your function must return -1.
